@@ -2,11 +2,12 @@ var apiKey = require('./../.env').apiKey;
 
 $(document).ready(function() {
   $('#userRepo').click(function() {
-    var city = $('#userName').val();
+    var gitUser = $('#userName').val();
     $('#userName').val("");
-    $.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + apiKey)
+    $.get('https://api.github.com/users/' + gitUser + '/repos?access_token=' + apiKey)
     .then(function(response) {
-      $('.showRepo').text("The humidity in " + city + " is " + response.main.humidity + "%");
+      debugger;
+      $('.showRepo').append("Here is " + gitUser + "'s public repositories: " + response[0].name + " " + response[0].description);
     })
     .fail(function(error) {
       $('.showRepo').text(error.responseJSON.message);
