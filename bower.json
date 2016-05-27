@@ -1,0 +1,26 @@
+{
+  "name": "githubrepo",
+  "description": "Project focus on calling API information.",
+  "main": "gulpfile.js",
+  "authors": [
+    "DJ Roychoudhury <djroychoudhury@yahoo.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/droycho/gihubRepo.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "github",
+    "API",
+    "repository"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "bootstrap": "^3.3.6"
+  }
+}
