@@ -7,6 +7,7 @@ $(document).ready(function() {
     $.get('https://api.github.com/users/' + gitUser + '/repos?access_token=' + apiKey)
     .then(function(response) {
 // need to figure out for or forEach loop on this part, but life's too short. so beer first.
+// also need to refactor this part into second js file.
       $('.showRepo').append("Here are 30 of " + gitUser + "'s Public Repositories (in Alphabetical Order): ");
       $('.showRepoName1').append(response[0].name + ": Created on: " + response[0].created_at);
         $('.showRepoDiscription1').append(response[0].description);
