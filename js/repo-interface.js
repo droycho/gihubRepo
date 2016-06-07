@@ -9,3 +9,5 @@ $(document).ready(function() {
     currentRepoObject.getRepo(gitUser);
   });
 });
+
+//Not quite sure how to reset previously filled HTML data upon second submission. I believe a .reset() function would do it, but the resources i found didn't quite show how with API info.
