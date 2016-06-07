@@ -6,6 +6,7 @@ $(document).ready(function() {
   $('#userRepo').click(function() {
     var gitUser = $('#userName').val();
     $('#userName').val("");
+    $('.showGitHubName').empty();
     currentRepoObject.getRepo(gitUser);
   });
 });
